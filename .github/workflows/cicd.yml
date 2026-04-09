@@ -26,9 +26,9 @@ jobs:
 
       # Install dependencies
       - name: Install dependencies
-        run: npm ci
+        run: npm install
 
-# Run Snyk vulnerability scan
+      # Run Snyk vulnerability scan
       - name: Run Snyk to check for vulnerabilities
         uses: snyk/actions/node@master
         env:
